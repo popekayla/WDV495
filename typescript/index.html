@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+        <link rel="stylesheet" href="style.css">
+        <script src="functions.js"></script>
+        <title>WDV 495 TypeScript</title>
+
+    </head>
+
+    <body>
+
+        <div class="container">
+
+            <div class="color-box">
+                <p>&nbsp;</p>
+            </div>
+
+            <button class="random-color">Generate Random Color</button>
+            
+            <h2>Edit Color</h2>
+
+            <button class="switch" id="RGB">RGB Generator</button>
+            <button class="switch" id="hex">Hex Generator</button>
+
+            <form id="RGBForm" class="hidden">
+                <label for="r">R:</label>
+                <input type="number" name="r" id="inr" min="0" max="255"> <input type="button" value="Randomize" class="random" id="r">
+
+                <label for="g">G:</label>
+                <input type="number" name="g" id="ing" min="0" max="255"> <input type="button" value="Randomize" class="random" id="g">
+
+                <label for="b">B:</label>
+                <input type="number" name="b" id="inb" min="0" max="255"> <input type="button" value="Randomize" class="random" id="b">
+
+            </form>
+
+            <form id="hexForm">
+                <label for="r">Hex Code:</label>
+                <input type="text" name="hex" id="hexInput"> <input type="button" value="Submit" class="randomHex" id="hex">
+
+            </form>
+
+        </div>
+
+    </body>
+
+</html>
