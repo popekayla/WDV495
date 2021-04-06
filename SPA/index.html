@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="js/functions.js"></script>
+        <script src="js/displayCharacter.js"></script>
+
+        <title>Editable D&D Character Sheet</title>
+
+
+    </head>
+
+    <body>
+
+        <h1>Character Sheet</h1>
+        <div class="container">
+            <p>Select Character: <select class="characterSelect">
+                <option value='undefined'>Select</option>
+            </select></p>
+            <button type="button" class="new">New Charater</button>
+            <h2 class="nameDisplay"></h2>
+            
+            <form name="character" id="character" method="POST" class="invisible">
+                
+            <button type="button" class="edit">Edit</button>
+                <div class="character-sheet">
+                    <div class="abilities"></div>
+                    <div class="column">
+                        <div class="saving-throws"></div>
+                        <div class="skills"></div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    </body>
+
+</html>
