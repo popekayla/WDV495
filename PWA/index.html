@@ -1,0 +1,91 @@
+<!DOCTYPE html>
+<html>
+
+    <head>
+
+        <link rel="stylesheet" href="css/style.css">
+
+        <script src="database/character.js"></script>
+
+        <title>Editable D&D Character Sheet</title>
+
+        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+        <link rel="manifest" href="manifest.json">
+
+        <meta name="theme-color" content="white"/>
+        <link rel="icon" href="images/character-sheet-favicon.png" type="image/x-icon" />  
+        <link rel="apple-touch-icon" href="images/character-sheet-icon-152.png">   
+        <meta name="theme-color" content="white"/>  
+        <meta name="apple-mobile-web-app-capable" content="yes">  
+        <meta name="apple-mobile-web-app-status-bar-style" content="black"> 
+        <meta name="apple-mobile-web-app-title" content="Hello World"> 
+        <meta name="msapplication-TileImage" content="images/character-sheet-144.png">  
+        <meta name="msapplication-TileColor" content="#FFFFFF">
+
+
+    </head>
+
+    <body>
+
+        <h1>Character Sheet</h1>
+        <div class="container">
+            <p>Select Character: <select class="characterSelect">
+                <option value='undefined'>Select</option>
+            </select></p>
+            <button type="button" class="new">New Charater</button>
+            
+            <form name="character" id="character" method="POST" class="invisible">
+
+                <div class="character-sheet">
+                    <div class="info">
+                        <h2 class="nameDisplay"></h2>
+                        <div class="other-info">
+                            <p></p>
+                            <p></p>
+                            <p>Level </p>
+                        </div>
+                        <button type="button" class="edit">Edit</button>
+                    </div>
+                    
+                    <div class="abilities"></div>
+                    <div class="column-2">
+                        <div class="saving-throws"></div>
+                        <div class="skills"></div>
+                    </div>
+                    <div class="column-3">
+                        
+                        <div class="pro-bonus">
+                            <p>Proficiency Bonus</p>
+                        </div>
+                        <div class="acBlock"><p>AC</p></div>
+                        <div class="initiativeBlock"><p>Initiative</p></div>
+                        <div class="speedBlock"><p>Walking Speed</p></div>
+                        <div class="health">
+                            <h3>Hit Points</h3>
+                            <div>
+                                <p> / </p>
+                                <p>Current  Max</p>
+                            </div>
+                            <div>
+                                <p>Temporary</p>
+                            </div>
+                        </div>
+                        <div class="passives">
+                            <h3>Passives</h3>
+                        </div>
+                        <div class="defenses">
+                            <h3>Defenses</h3>
+                        </div>
+                    </div>
+                </div>
+            </form>
+        </div>
+
+    
+       <script src="js/functions.js"></script>
+       
+       <script src="js/display.js"></script>
+    </body>
+
+</html>

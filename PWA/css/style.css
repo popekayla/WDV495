@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    font-size: 1em;
+}
+
+h1, h3, h4, h5, h6 {
+    font-family: Georgia, 'Times New Roman', Times, serif;
+    margin-bottom: 1.5em;
+}
+
+h2 {
+    font-size: 3.5em;
+    margin-right: 1em;
+    font-family: Georgia, 'Times New Roman', Times, serif;
+}
+
+button {
+    background: white;
+    border: 1px solid darkslategray;
+    border-radius: 0;
+    padding: 12px 24px;
+}
+
+input[type=text]:not(.name) {
+    width: 23%;
+}
+
+.container{
+    width: 80%;
+    max-width: 1400px;
+    margin: 5em auto;
+}
+
+.character-sheet {
+    display: flex;
+    flex-wrap: wrap;
+    margin: 2em 0;
+}
+
+.invisible {
+    display: none;
+}
+
+.info {
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 0.9em;
+    margin-bottom: 3em;
+    width: 100%;
+}
+
+.other-info {
+    margin-right: 2em;
+}
+
+.abilities {
+    width: 15%;
+    display: flex;
+    flex-direction: column;
+}
+
+.ability {
+    text-align: center;
+    padding: 15px;
+    margin: 0.5em 0;
+    border: 1px solid black;
+    text-transform: capitalize;
+}
+
+.column-2 {
+    width: 25%;
+    margin-left: 1em;
+}
+
+.column-3 {
+    width: 50%;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr 2fr 2fr;
+    column-gap: 1em;
+    margin-left: 1em;
+}
+
+.saving-throws, .skills, .pro-bonus, .acBlock, .speedBlock, .initiativeBlock, .health, .passives, .defenses {
+    padding: 15px;
+    border: 1px solid black;
+    margin-bottom: 1em;
+    text-align: center;
+    text-transform: capitalize;
+}
+
+
+.saving-throws p, .skills p, .passives p, .defenses p{
+    display: flex;
+    justify-content: space-between;
+}
+
+.health {
+    grid-column: 1 / span 4;
+    justify-self: stretch;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+
+.health span {
+    font-size: 1.5em;
+}
+
+.health h3 {
+    width: 100%;
+}
+
+.passives {
+    grid-column: 1 / span 2;
+}
+
+.defenses {
+    grid-column: 3 / span 2;
+}
+
+@media(max-width: 980px) {
+
+    .container{
+        width:95%;
+    }
+
+    .character-sheet {
+        justify-content: space-around;
+    }
+
+    .abilities {
+        width: 30%;
+    }
+
+    .column-2 {
+        width: 40%;
+        margin-left: 0;
+    }
+
+    .column-3 {
+        width: 100%;
+        margin-left: 0;
+    }
+}
+
+@media(max-width:510px) {
+
+    .abilities {
+        width: 38%;
+    }
+
+    .other-info {
+        margin-right: 1em;
+    }
+
+    .column-2{
+        width: 60%;
+    }
+
+    .column-3 {
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr 1fr 1fr 1fr;
+    }
+
+    .health {
+        grid-column: 1 / span 2;
+    }
+
+    .passives {
+        grid-column: 1 / span 1;
+    }
+    
+    .defenses {
+        grid-column: 2 / span 1;
+    }
+
+}
